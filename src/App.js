@@ -1,5 +1,6 @@
 import './App.css';
 import HighChart3DComponent from './component/chartComponent';
+import StructureChartComponent from './component/StructureChartComponent'
 
 const data = await fetch(
   'http://localhost:6060/categ'
@@ -41,7 +42,7 @@ function App() {
         // Data
         chartData={chartData}
         // Chart Type
-        chartType={chartType['3d'][2]}
+        chartType={chartType['3d'][0]}
         innerSize={150}
         // Configuration for 3D Options
         chartOptions={{
